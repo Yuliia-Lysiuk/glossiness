@@ -1,0 +1,154 @@
+// Work
+@keyframes sun-rise {
+  from {
+    /* pushes the sun down past the viewport */
+    transform: rotate(360deg);
+  }
+  to {
+    /* returns the sun to its default position */
+    transform: rotate(0);
+  }
+}
+.circle {
+  position: relative;
+  margin: 50px auto;
+  width: 100px;
+  height: 100px;
+  border: 2px solid #000;
+  border-radius: 50%;
+}
+
+.work__box-img {
+   @media screen and (min-width: $third-bp) {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+   }
+}
+
+.work__box{
+  position: relative;
+}
+
+.work__img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  animation: 4s linear 0s infinite alternate sun-rise;
+}
+
+.work__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.work__item {
+  position: relative;
+}
+.work__thumb {
+  position: absolute;
+  display: flex;
+  padding: 27px 0;
+  bottom: 0px;
+  width: 100%;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+.section-title_theme_dark {
+  color: $main-bg-color;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+
+.circle__box {
+  margin:0 20px;
+
+}
+
+.circle-item {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.circle__title {
+  font-size: 20px;
+  
+}
+
+.circle__text-end{
+text-align: end;
+}
+
+.circle__small {
+ 
+  background: linear-gradient(
+      120deg,
+      rgba(255, 223, 0, 1) 0%,
+      rgba(255, 184, 0, 1) 50%
+    ),
+    linear-gradient(90deg, rgba(255, 219, 101, 1) 0%, rgba(255, 140, 51, 1) 50%);
+  padding: 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  &:hover,
+  &:focus{
+    transform: scale(1.1);
+    
+  }
+}
+
+.circle__text {
+  font-family: 'Merriweather', serif;
+  letter-spacing: 0.01em;
+  line-height: 1.51;
+}
+
+.circle__icon {
+  display: block;
+}
+
+.circle-item{
+   @media screen and (min-width: $third-bp) {
+  position: absolute;
+   }
+}
+.circle-item-1{
+      right: -150px;
+    top: -60px;
+}
+.circle-item-2{
+top: 45px;
+    right: -45px;
+}
+.circle-item-3{
+     top: 40%;
+    right: -10px;
+}
+.circle-item-4{
+  bottom: 30px;
+    right: -45px;
+}
+.circle-item-5{
+      bottom: -85px;
+    right: -150px;
+}
+.circle-item-6{
+  left: -150px;
+    top: -60px;
+}
+.circle-item-7{
+      top: 45px;
+    left: -45px;
+}
+.circle-item-8{
+ top: 40%;
+    left: -10px;
+}
+.circle-item-9{
+   bottom: 30px;
+    left: -45px;
+}
+.circle-item-10{
+   bottom: -83px;
+    left: -150px;
+}

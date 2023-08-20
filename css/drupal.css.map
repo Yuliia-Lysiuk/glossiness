@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../sass/layout/index/drupal.scss"
+    ],
+    "names": [],
+    "file": "drupal.css"
+}

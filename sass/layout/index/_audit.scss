@@ -1,0 +1,35 @@
+/* Audit */
+
+.audit__box {
+  @media screen and (min-width: $third-bp) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.audit__box-text {
+  padding: 20px 10px;
+  @media screen and (min-width: $third-bp) {
+    padding: 40px;
+  }
+}
+
+.audit__box-scroll {
+  height: 330px;
+  overflow-y: scroll;
+  scroll-behavior: auto;
+  &::-webkit-scrollbar {
+    width: 3px;
+  }
+
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+    background-color: #f9f9f9;
+    border-radius: 20%;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10%;
+    background: $accent-color;
+  }
+}

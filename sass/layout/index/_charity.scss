@@ -1,0 +1,130 @@
+.charity{
+  padding-bottom: 100px;
+}
+
+.charity__box {
+  padding-bottom: 100px;
+  @media screen and (min-width: $third-bp) {
+    display: grid;
+    grid-template-columns: 0.9fr 1fr;
+    padding-bottom: 175px;
+  }
+}
+
+.charity__box-text {
+  @media screen and (min-width: $third-bp) {
+    padding-right: 100px;
+  }
+}
+
+.charity__title {
+  padding-bottom: 76px;
+}
+
+.charity__title-text {
+  padding-bottom: 10px;
+  font-size: 16px;
+  @media screen and (min-width: $third-bp) {
+    font-size: 18px;
+  }
+}
+
+.charity__text {
+  font-size: 14px;
+  @media screen and (min-width: $third-bp) {
+    font-size: 16px;
+  }
+}
+
+.charity__thumb {
+  position: relative;
+}
+
+.charity_img{
+  &:not(:last-child){
+    margin-bottom: 20px;
+    display: block;
+  }
+  @media screen and (min-width: $third-bp) {
+    position: absolute;
+  }
+ 
+}
+
+.charity_img1 {
+ 
+  top: -80px;
+  z-index: 3;
+}
+
+.charity_img2 {
+  
+  bottom: -100px;
+  right: 58px;
+  z-index: 4;
+}
+
+.charity_img3 {
+  top: -145px;
+  right: 0px;
+  z-index: 2;
+}
+
+.menu-card {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+.menu-card__item {
+  margin-left: 30px;
+  margin-top: 30px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  flex-basis: calc((100% - 30px) / 1);
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 60px) / 2);
+    &:not(:last-child) {
+      margin-bottom: 0px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 90px) / 3);
+  }
+}
+.menu-card__link {
+  text-decoration: none;
+  color: $main-text-color;
+  display: inline-block;
+}
+
+.menu-card__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 36px 24px;
+}
+
+.menu-card__title {
+  font-size: 18px;
+  margin-bottom: 10px;
+  @media screen and (min-width: 1200px) {
+    font-size: 21px;
+    margin-bottom: 16px;
+  }
+}
+
+.menu-card__text {
+  font-size: 12px;
+  @media screen and (min-width: 1200px) {
+    font-size: 15px;
+  }
+}
+
